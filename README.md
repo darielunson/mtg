@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Magic: The Gathering Creature Cards
+
+Allows for:
+ - displaying all MTG cards with label type "Creatures"
+ - search for card names of type: creatures
+ - sort by "name", "type", "artist", and "setName"
+ - cards "flip" to show details on back-side
+
 ## Available Scripts
 
 In the project directory, you can run:
