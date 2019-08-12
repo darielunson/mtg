@@ -1,0 +1,41 @@
+body {
+    background-color: #161619;
+}
+
+/*Overrides*/
+.container-fluid {
+    padding-top: 15px;
+    bottom: 30px;
+}
+
+.card.card-body {
+    margin: 0 auto;
+    width: 60%;
+    min-width: 390px;
+}
+
+.card-click {
+    cursor: pointer;
+    width: 225px;
+    height: 308px;
+    background: black;
+}
+
+.card-click.card-detail {
+    cursor: pointer;
+    width: 225px;
+    height: 308px;
+    overflow: hidden;
+}
+
+.navbar-brand.mx-auto {
+    margin-left: 0 !important;
+}
+
+.detail.card {
+    width: 265px;
+}
+
+.detail.card-info {
+    width: 330px;
+}
