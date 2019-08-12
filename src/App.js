@@ -15,8 +15,8 @@ class App extends Component {
                     <Navbar />
                     <div className="container-fluid justify-content-center">
                         <Switch>
-                            <Route exact path="/" component={Index}/>
-                            <Route exact path="/details/card/:id" component={Details}/>
+                            <Route path="/" component={Index}/>
+                            <Route path="/details/card/:id" component={Details}/>
                         </Switch>
                     </div>
                 </React.Fragment>

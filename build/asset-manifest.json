@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "//darielunson.com/react/mtg/static/css/main.8c29dac5.chunk.css",
+    "main.js": "//darielunson.com/react/mtg/static/js/main.567102ea.chunk.js",
+    "main.js.map": "//darielunson.com/react/mtg/static/js/main.567102ea.chunk.js.map",
+    "runtime~main.js": "//darielunson.com/react/mtg/static/js/runtime~main.f69c2412.js",
+    "runtime~main.js.map": "//darielunson.com/react/mtg/static/js/runtime~main.f69c2412.js.map",
+    "static/js/2.25ac8f18.chunk.js": "//darielunson.com/react/mtg/static/js/2.25ac8f18.chunk.js",
+    "static/js/2.25ac8f18.chunk.js.map": "//darielunson.com/react/mtg/static/js/2.25ac8f18.chunk.js.map",
+    "index.html": "//darielunson.com/react/mtg/index.html",
+    "precache-manifest.71a2deef945de522197640c4348192b0.js": "//darielunson.com/react/mtg/precache-manifest.71a2deef945de522197640c4348192b0.js",
+    "service-worker.js": "//darielunson.com/react/mtg/service-worker.js",
+    "static/css/main.8c29dac5.chunk.css.map": "//darielunson.com/react/mtg/static/css/main.8c29dac5.chunk.css.map",
+    "static/media/default_card.jpg": "//darielunson.com/react/mtg/static/media/default_card.5329c291.jpg",
+    "static/media/fingers.gif": "//darielunson.com/react/mtg/static/media/fingers.748b5b62.gif",
+    "static/media/mtg_logo.png": "//darielunson.com/react/mtg/static/media/mtg_logo.9c928612.png"
+  }
+}
