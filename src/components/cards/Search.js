@@ -11,7 +11,7 @@ class Search extends Component {
 
     findCard = (dispatch, e) => {
         e.preventDefault();
-
+        console.log('e is ',e);
         //This will cause the "loading" icon to show by clearing payload count
         dispatch({
             type: 'SEARCH_CARDS',

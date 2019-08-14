@@ -5,10 +5,6 @@ import Card from './Card';
 
 class Cards extends Component {
 
-    state = {
-        loading: true
-    };
-
     render() {
         return (
             <Consumer>

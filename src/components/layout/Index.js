@@ -8,7 +8,6 @@ const Index = () => {
        <React.Fragment>
            <Sort />
            <Cards />
-
        </React.Fragment>
     )
 }
