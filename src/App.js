@@ -13,7 +13,7 @@ class App extends Component {
             <Router>
                 <React.Fragment>
                     <Navbar />
-                    <div className="container-fluid justify-content-center">
+                    <div className="container-fluid justify-content-center main-container">
                         <Switch>
                             <Route path="/" component={Index}/>
                             <Route path="/details/card/:id" component={Details}/>

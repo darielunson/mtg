@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Lazyload from './components/cards/Lazyload';
 
 const Context = React.createContext();
 
@@ -10,14 +9,22 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 card_list: action.payload,
-                heading: `Creature Search Results: ${action.currSearchType} - ${action.payload.length} results`
+                heading: `Creature Search Results: ${action.currSearchType} - ${action.payload.length} results`,
+                results: true
+            };
+        case 'NO_RESULTS':
+            return {
+                ...state,
+                card_list: action.payload,
+                heading: `Creature Search Results: ${action.currSearchType} - No results`,
+                results: false
             };
         case 'SORT_CARDS':
-        return {
-            ...state,
-            card_list: action.payload,
-            heading: `Creature Sort Results: ${action.currSortType} - ${action.payload.length} results`
-        };
+            return {
+                ...state,
+                card_list: action.payload,
+                heading: `Creature Sort Results: ${action.currSortType} - ${action.payload.length} results`
+            };
         case 'LAZY_LOAD':
             return {
                 ...state,
@@ -32,7 +39,7 @@ export class Provider extends Component {
     state = {
         card_list: [],
         heading: 'Creature Character Cards',
-        pageSize: 'pageSize=20',
+        pageSize: 'pageSize=10',
         pageNum: 'page=1',
         dispatch: action => this.setState(state => reducer(state, action))
     };
@@ -48,11 +55,9 @@ export class Provider extends Component {
     }
     
     render() {
-        // console.log('context render');
         return (
             <Context.Provider value={this.state}>
                 {this.props.children}
-                <Lazyload />
             </Context.Provider>
         )
     }

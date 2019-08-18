@@ -11,7 +11,6 @@ class Search extends Component {
 
     findCard = (dispatch, e) => {
         e.preventDefault();
-        console.log('e is ',e);
         //This will cause the "loading" icon to show by clearing payload count
         dispatch({
             type: 'SEARCH_CARDS',
@@ -21,11 +20,22 @@ class Search extends Component {
         axios.get(`${process.env.REACT_APP_HEROKU_CORS}https://api.magicthegathering.io/v1/cards?contains=originalType&orderBy=name&${process.env.REACT_APP_MAIN_FILTER}&name=${this.state.cardName}`)
 
             .then(res => {
-                dispatch({
-                   type: 'SEARCH_CARDS',
-                    payload: res.data.cards,
-                    currSearchType: this.state.cardName
-                });
+                if (res.data.cards.length > 0) {
+                    // console.log('data returned');
+                    dispatch({
+                        type: 'SEARCH_CARDS',
+                        payload: res.data.cards,
+                        currSearchType: this.state.cardName
+                    });
+                } else {
+                    // console.log('NO data returned');
+                    dispatch({
+                        type: 'NO_RESULTS',
+                        payload: res.data.cards,
+                        currSearchType: this.state.cardName
+                    });
+                }
+
             })
             .catch(err => console.log('error',err));
     }

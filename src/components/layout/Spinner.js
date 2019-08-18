@@ -3,7 +3,7 @@ import spinner from './fingers.gif';
 
 export default () => {
     return (
-        <div>
+        <div className="container-fluid justify-content-center">
             <img
                 src={spinner}
                 alt="Loading ..."
