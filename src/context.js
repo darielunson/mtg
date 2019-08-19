@@ -39,7 +39,7 @@ export class Provider extends Component {
     state = {
         card_list: [],
         heading: 'Creature Character Cards',
-        pageSize: 'pageSize=10',
+        pageSize: 'pageSize=20',
         pageNum: 'page=1',
         dispatch: action => this.setState(state => reducer(state, action))
     };
